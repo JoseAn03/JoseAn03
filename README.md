@@ -7,6 +7,10 @@
 <h3 align="center">Data Analyst · BI · Python · SQL · Power BI · VBA</h3>
 
 <p align="center">
+  <i>"De datos crudos a decisiones — con café y código tico"</i> 🇨🇷
+</p>
+
+<p align="center">
   <a href="https://linkedin.com/in/jose-andres-sequeira-hernandez-3aaa03285">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&logoColor=white">
   </a>
@@ -76,4 +80,10 @@ No-Show reducción        →  -3% en 6 meses
 
 <p align="center">
   <i>"Datos que no se usan son solo números. Datos que se usan son decisiones."</i>
+</p>
+
+---
+
+<p align="center">
+  🇨🇷 Hecho en Costa Rica · Actualmente buscando nuevas oportunidades 🔍
 </p>
