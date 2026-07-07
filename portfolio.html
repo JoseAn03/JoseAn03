@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>José Andrés Sequeira · Data Analyst Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:#0f172a;background:#f8fafc;line-height:1.6}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:white;padding:80px 0 60px;text-align:center}
+.hero h1{font-size:48px;font-weight:800;margin-bottom:8px;letter-spacing:-1px}
+.hero .subtitle{font-size:20px;color:#94a3b8;margin-bottom:16px}
+.hero .location{font-size:14px;color:#64748b}
+.hero .hero-links{margin-top:24px}
+.hero .hero-links a{display:inline-block;padding:10px 24px;border-radius:8px;font-weight:600;font-size:14px;margin:0 6px;transition:all .15s}
+.hero .btn-primary{background:#2563eb;color:white}
+.hero .btn-primary:hover{background:#1d4ed8;text-decoration:none}
+.hero .btn-secondary{background:rgba(255,255,255,0.1);color:white;border:1px solid rgba(255,255,255,0.2)}
+.hero .btn-secondary:hover{background:rgba(255,255,255,0.15);text-decoration:none}
+
+/* Stats */
+.stats{background:white;border-bottom:1px solid #e2e8f0;padding:40px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;text-align:center}
+.stat-value{font-size:32px;font-weight:800;color:#0f172a}
+.stat-label{font-size:13px;color:#64748b;margin-top:2px}
+
+/* Sections */
+section{padding:64px 0}
+.section-title{font-size:28px;font-weight:700;margin-bottom:40px;text-align:center}
+.section-title span{background:linear-gradient(135deg,#2563eb,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+
+/* About */
+.about-text{max-width:700px;margin:0 auto;text-align:center;color:#475569;font-size:16px}
+
+/* Skills */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.skill-card{background:white;border-radius:12px;padding:24px;border:1px solid #e2e8f0;transition:all .15s}
+.skill-card:hover{border-color:#93c5fd;box-shadow:0 4px 12px rgba(37,99,235,0.08)}
+.skill-card h3{font-size:15px;font-weight:600;margin-bottom:12px;color:#0f172a}
+.skill-tags{display:flex;flex-wrap:wrap;gap:6px}
+.skill-tag{background:#eff6ff;color:#2563eb;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500}
+
+/* Projects */
+.project-card{background:white;border-radius:12px;padding:28px;margin-bottom:20px;border:1px solid #e2e8f0;transition:all .15s;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start}
+.project-card:hover{border-color:#93c5fd;box-shadow:0 4px 12px rgba(37,99,235,0.08)}
+.project-card h3{font-size:18px;font-weight:700;margin-bottom:6px}
+.project-card p{color:#64748b;font-size:14px;margin-bottom:12px;line-height:1.5}
+.project-tech{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.project-tech span{background:#f1f5f9;color:#475569;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:500}
+.project-links a{font-size:13px;font-weight:600;margin-right:16px}
+.project-stats{display:flex;gap:16px;font-size:13px;color:#94a3b8}
+.project-stats span{display:flex;align-items:center;gap:4px}
+.project-badge{display:inline-block;background:#dcfce7;color:#166534;padding:2px 10px;border-radius:4px;font-size:11px;font-weight:600}
+
+/* Experience */
+.exp-card{background:white;border-radius:12px;padding:28px;margin-bottom:16px;border:1px solid #e2e8f0}
+.exp-card h3{font-size:17px;font-weight:700}
+.exp-card .company{color:#2563eb;font-weight:600;font-size:14px}
+.exp-card .date{color:#94a3b8;font-size:13px;margin-bottom:8px}
+.exp-card ul{list-style:none;padding:0}
+.exp-card ul li{padding:4px 0;color:#475569;font-size:14px;padding-left:20px;position:relative}
+.exp-card ul li::before{content:"▸";position:absolute;left:0;color:#2563eb}
+
+/* Contact */
+.contact{text-align:center;background:white;border-top:1px solid #e2e8f0}
+.contact-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.contact-links a{display:flex;align-items:center;gap:8px;padding:12px 24px;border-radius:8px;border:1px solid #e2e8f0;font-weight:500;font-size:14px;transition:all .15s}
+.contact-links a:hover{background:#f8fafc;text-decoration:none;border-color:#93c5fd}
+
+/* Footer */
+footer{text-align:center;padding:32px 0;color:#94a3b8;font-size:13px;background:#f8fafc}
+
+@media(max-width:768px){
+  .hero h1{font-size:32px}
+  .project-card{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>👋 José Andrés Sequeira</h1>
+    <div class="subtitle">Data Analyst &middot; Business Intelligence</div>
+    <div class="location">📍 San José, Costa Rica &middot; ✈️ SJO Airport</div>
+    <div class="hero-links">
+      <a href="#projects" class="btn-primary">📁 Ver proyectos</a>
+      <a href="https://github.com/JoseAn03" class="btn-secondary">🐱 GitHub</a>
+      <a href="https://linkedin.com/in/jose-andres-sequeira-hernandez-3aaa03285" class="btn-secondary">💼 LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div><div class="stat-value">4,600+</div><div class="stat-label">Reservas procesadas</div></div>
+      <div><div class="stat-value">87.5%</div><div class="stat-label">Tiempo ahorrado</div></div>
+      <div><div class="stat-value">5</div><div class="stat-label">Sistemas automatizados</div></div>
+      <div><div class="stat-value">4</div><div class="stat-label">Repositorios activos</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section>
+  <div class="container">
+    <h2 class="section-title"><span>🧑‍💻 Sobre mí</span></h2>
+    <div class="about-text">
+      <p>Data Analyst con experiencia en operaciones de renta de vehículos en <strong>Aeropuerto Internacional Juan Santamaría (SJO)</strong>. Trabajo con <strong>Enterprise Holdings</strong> (Alamo, Enterprise, National) y <strong>Grupo ANC</strong>.</p>
+      <br>
+      <p>Construyo herramientas que convierten datos crudos en decisiones — dashboards en Power BI, automatizaciones con Python y VBA, consultas SQL analíticas. Lo que antes tomaba 2 horas ahora son 15 minutos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section style="background:white;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div class="container">
+    <h2 class="section-title"><span>🛠️ Stack técnico</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>🐍 Lenguajes</h3>
+        <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">VBA</span><span class="skill-tag">DAX</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>📊 BI & Visualización</h3>
+        <div class="skill-tags"><span class="skill-tag">Power BI</span><span class="skill-tag">Tableau</span><span class="skill-tag">Plotly</span><span class="skill-tag">Matplotlib</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>🗄️ Bases de datos</h3>
+        <div class="skill-tags"><span class="skill-tag">MySQL</span><span class="skill-tag">MariaDB</span><span class="skill-tag">DuckDB</span><span class="skill-tag">PostgreSQL</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>🐍 Librerías Python</h3>
+        <div class="skill-tags"><span class="skill-tag">pandas</span><span class="skill-tag">numpy</span><span class="skill-tag">openpyxl</span><span class="skill-tag">scikit-learn</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>⚡ Automatización</h3>
+        <div class="skill-tags"><span class="skill-tag">Excel VBA</span><span class="skill-tag">Python Scripts</span><span class="skill-tag">Batch</span><span class="skill-tag">ETL</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>🔧 Herramientas</h3>
+        <div class="skill-tags"><span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Jupyter</span><span class="skill-tag">Streamlit</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title"><span>📁 Proyectos</span></h2>
+
+    <div class="project-card">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+          <h3>Rental Operations Dashboard</h3>
+          <span class="project-badge">🆕 Nuevo</span>
+        </div>
+        <p>Dashboard interactivo con 4,600+ reservas y 2,000+ vuelos. Star Schema, DAX measures, KPIs ejecutivos, predicción de No-Shows. Disponible como HTML interactivo y Power BI.</p>
+        <div class="project-tech">
+          <span>Power BI</span><span>DAX</span><span>SQL</span><span>Python</span><span>DuckDB</span><span>Plotly</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/JoseAn03/powerbi-rental-dashboard">📂 Repo</a>
+          <a href="https://josean03.github.io/powerbi-rental-dashboard/">🌐 Dashboard</a>
+        </div>
+      </div>
+      <div class="project-stats">
+        <span>📊 6 charts</span>
+        <span>🗄️ 8 datasets</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <h3>SQL for Decision Intelligence</h3>
+        <p>Portafolio SQL progresivo: de queries básicas a window functions y optimización. 4 niveles con preguntas de negocio reales sobre operaciones aeroportuarias.</p>
+        <div class="project-tech">
+          <span>SQL</span><span>DuckDB</span><span>CTEs</span><span>Window Functions</span><span>EXPLAIN</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/JoseAn03/sql-decision-intelligence">📂 Repo</a>
+        </div>
+      </div>
+      <div class="project-stats">
+        <span>🧠 4 niveles</span>
+        <span>📄 4 queries</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <h3>Proyectos Data Analyst Portfolio</h3>
+        <p>Colección completa de herramientas en producción para Enterprise Holdings SJO. Automatización de Game Plan diario, análisis de No-Shows, dashboards Power BI, y queries SQL para reporting ejecutivo.</p>
+        <div class="project-tech">
+          <span>Python</span><span>SQL</span><span>Power BI</span><span>VBA</span><span>MySQL</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/JoseAn03/Proyectos-">📂 Repo</a>
+        </div>
+      </div>
+      <div class="project-stats">
+        <span>🏢 Enterprise</span>
+        <span>⚡ 87.5% faster</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section style="background:white;border-top:1px solid #e2e8f0">
+  <div class="container">
+    <h2 class="section-title"><span>💼 Experiencia</span></h2>
+
+    <div class="exp-card">
+      <h3>Data Analyst</h3>
+      <div class="company">Enterprise Holdings (Alamo · Enterprise · National)</div>
+      <div class="date">SJO Airport · Costa Rica</div>
+      <ul>
+        <li>Automaticé reportes operativos diarios de 2h → 15 min (87.5% más rápido)</li>
+        <li>Procesamiento de 500+ reservas/día con Python + VBA</li>
+        <li>Dashboard Power BI para gerencia con DAX measures y KPIs</li>
+        <li>Reducción de No-Shows con análisis predictivo de patrones</li>
+        <li>Consolidación de 3 sistemas de marcas en 1 plataforma unificada</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <h3>Data Analyst</h3>
+      <div class="company">Grupo ANC (Budget)</div>
+      <div class="date">SJO Airport · Costa Rica</div>
+      <ul>
+        <li>Análisis de operaciones de renta y comportamiento de clientes</li>
+        <li>Reportes ejecutivos de revenue y No-Show por canal</li>
+        <li>Automatización de procesos de consolidación de datos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+  <div class="container">
+    <h2 class="section-title"><span>📬 Contacto</span></h2>
+    <div class="contact-links">
+      <a href="https://linkedin.com/in/jose-andres-sequeira-hernandez-3aaa03285">💼 LinkedIn</a>
+      <a href="https://github.com/JoseAn03">🐱 GitHub</a>
+      <a href="mailto:chomita0317@gmail.com">✉️ Email</a>
+      <a href="https://josean03.github.io/powerbi-rental-dashboard/">📊 Dashboard</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 José Andrés Sequeira Hernández &middot; Data Analyst Portfolio</p>
+    <p style="margin-top:4px;font-size:12px">Hecho con ❤️ en Costa Rica</p>
+  </div>
+</footer>
+
+</body>
+</html>
