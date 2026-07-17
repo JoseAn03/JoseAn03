@@ -1,89 +1,102 @@
+<h1 align="center">👋 José Andrés Sequeira Hernández</h1>
 <p align="center">
-  <img src="https://img.shields.io/badge/Data%20Analyst-0077B6?style=for-the-badge&logo=databricks&logoColor=white">
-  <img src="https://img.shields.io/badge/Business%20Intelligence-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
-</p>
-
-<h1 align="center">👋 Hola, soy José Andrés</h1>
-<h3 align="center">Data Analyst · BI · Python · SQL · Power BI · VBA</h3>
-
-<p align="center">
-  <i>"De datos crudos a decisiones — con café y código tico"</i> 🇨🇷
+  <b>Data Analyst</b> · Python · SQL · Power BI · Automation
 </p>
 
 <p align="center">
   <a href="https://linkedin.com/in/jose-andres-sequeira-hernandez-3aaa03285">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&logoColor=white">
-  </a>
-  <a href="https://github.com/JoseAn03">
-    <img src="https://img.shields.io/badge/GitHub-333?style=flat&logo=github&logoColor=white">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white">
   </a>
   <a href="mailto:chomita0317@gmail.com">
-    <img src="https://img.shields.io/badge/Email-red?style=flat&logo=gmail&logoColor=white">
+    <img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white">
   </a>
+  <img src="https://img.shields.io/badge/📍-Costa%20Rica-success?style=flat">
+  <img src="https://img.shields.io/badge/🔍-Open%20to%20Work-brightgreen?style=flat">
 </p>
 
-<p align="center">📍 Costa Rica · ✈️ SJO Airport</p>
+---
+
+## 🧰 Tech Stack
+
+| Category | Skills |
+|----------|--------|
+| **Languages** | Python (pandas, numpy, scikit-learn), SQL (CTEs, window functions, optimization), VBA, DAX |
+| **BI & Visualization** | Power BI (DAX, data modeling, star schema), Tableau, Metabase, Excel (Power Query, pivot tables) |
+| **Databases** | MySQL, MariaDB, DuckDB, SQLite, PostgreSQL |
+| **Automation & ETL** | n8n, Python scripting, ETL pipelines, web scraping, API integrations |
+| **Cloud & DevOps** | Docker, Linux, Git/GitHub, Google Workspace |
+| **Data Roles** | Data Analysis, Business Intelligence, Data Quality, Data Automation, Reporting |
 
 ---
 
-## 👨‍💻 Sobre mí
+## 📂 Featured Projects
 
-Analista de datos con experiencia en operaciones de renta de vehículos en **Enterprise Holdings** (Alamo, Enterprise, National) y **Grupo ANC** en el Aeropuerto Internacional Juan Santamaría.
+### 📊 [Power BI Rental Dashboard](https://github.com/JoseAn03/powerbi-rental-dashboard)
+> Interactive dashboard with 4,600+ reservations, 30+ DAX measures, and star schema data model. Tracks No-Shows, revenue trends, and operational KPIs — adopted daily by management.
+>
+> `Power BI` `DAX` `SQL` `Data Modeling` `Star Schema`
 
-Me gusta agarrar datos crudos y convertirlos en herramientas útiles — dashboards que se ven bien, reportes que ahorran tiempo, procesos que antes tomaban 2 horas y ahora son 15 minutos.
+### 🐍 [SQL for Decision Intelligence](https://github.com/JoseAn03/sql-decision-intelligence)
+> Progressive SQL portfolio: basic queries → CTEs → window functions → query optimization. Business-driven SQL for real-world data analysis.
+>
+> `SQL` `CTEs` `Window Functions` `Query Optimization` `DuckDB`
 
-**Lo que traje a la mesa:**
-- 📉 Reduje No-Shows del 15% al 12% con análisis predictivo
-- ⚡ Automatización que pasó reportes manuales de 2h → 15 min
-- 📊 Dashboards en Power BI que usa la gerencia diario
-- 🐍 Procesamiento de 500+ reservas/día con Python + VBA
+### 🤖 [n8n Data Analyst Automations](https://github.com/JoseAn03/n8n-data-analyst-automations)
+> Low-code ETL workflows: automated email reporting, KPI alerts, web scraping, Google Sheets sync, and database pipelines.
+>
+> `n8n` `ETL` `Automation` `Low-Code` `Workflow`
 
----
+### 🔮 [ML No-Show Prediction](https://github.com/JoseAn03/ml-noshow-prediction)
+> Random Forest classifier (11 features) predicting No-Show risk with feature engineering and ROC AUC evaluation.
+>
+> `Python` `scikit-learn` `Random Forest` `Machine Learning` `Classification`
 
-## 🧰 Stack
+### ☁️ [Weather Data Pipeline](https://github.com/JoseAn03/weather-data-pipeline)
+> End-to-end ETL pipeline: Open-Meteo API extraction, Pandas transformations, Plotly dashboards. GitHub Pages deployment.
+>
+> `Python` `Pandas` `Plotly` `ETL` `API` `GitHub Pages`
 
-| Area | Tecnologías |
-|------|------------|
-| **Lenguajes** | Python, SQL, VBA |
-| **Librerías** | pandas, openpyxl, matplotlib, numpy, scikit-learn |
-| **Bases de datos** | MySQL, MariaDB, DuckDB |
-| **BI** | Power BI (DAX, Power Query, medidas), Tableau |
-| **Herramientas** | Git, GitHub, Excel, Jupyter, Streamlit |
-| **En aprendizaje** | ML, Web Scraping, Deploy de dashboards |
-
----
-
-## 📁 Proyectos destacados
-
-### 🚗 [Rental Operations Dashboard](https://github.com/JoseAn03/powerbi-rental-dashboard)
-Dashboard Power BI con 4,600+ reservas y 2,000+ vuelos. Star Schema, DAX measures, KPIs, No-Show analysis. Vista previa interactiva: [josean03.github.io/powerbi-rental-dashboard](https://josean03.github.io/powerbi-rental-dashboard/)
-
-### 📊 [Proyectos Data Analyst](https://github.com/JoseAn03/Proyectos-)
-Portafolio completo: SQL, GamePlan automation, No-Show reports, Power BI dashboards. Proyectos reales en producción en SJO.
+### 📈 [Metabase Analytics Portfolio](https://github.com/JoseAn03/metabase-analytics-portfolio)
+> Open-source BI dashboards with DuckDB and SQLite — interactive visualizations for data-driven decisions.
+>
+> `Metabase` `BI` `DuckDB` `SQLite` `Dashboards`
 
 ---
 
-## 📊 En números
+## 💼 Experience Highlights
 
-```
-Reservas procesadas/mes  →  ~1,500
-Reportes automatizados   →  5 sistemas en producción
-Tiempo ahorrado          →  87.5% vs proceso manual
-No-Show reducción        →  -3% en 6 meses
-```
+**Data Analyst · Enterprise Holdings (Alamo/Enterprise/National)** — SJO Airport *(Sep 2024 – Present)*
+- Automated 500+ daily reservation reports with Python, saving 10+ hours/week
+- Reduced report generation from 2 hours to 15 minutes (87.5% improvement)
+- Built Power BI dashboard tracking No-Shows, revenue, and trends — used daily by management
+- Developed ML model (Random Forest) predicting No-Show risk
+- Created ETL pipelines with n8n, DuckDB, and Metabase
 
 ---
+
+## 📜 Certifications
+
+- **Data Analytics Essentials** — Cisco (May 2026)
+- **Data Science with Python** — Cisco (May 2026)
+- **Foundations: Data Everywhere** — Google (May 2026)
+- **Process Data from Dirty to Clean** — Google (Jun 2026)
+- **Ethical Hacker** — Cisco / INA (May 2026)
+
+---
+
+## 📫 Contact
+
+- **Email:** chomita0317@gmail.com
+- **LinkedIn:** [linkedin.com/in/jose-andres-sequeira-hernandez-3aaa03285](https://linkedin.com/in/jose-andres-sequeira-hernandez-3aaa03285)
+- **GitHub:** [github.com/JoseAn03](https://github.com/JoseAn03)
+- **Location:** Santa Barbara, Heredia, Costa Rica
+
+---
+
+<p align="center">
+  <i>"From raw data to decisions — with Costa Rican coffee and code"</i> 🇨🇷
+</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=JoseAn03&color=blue&style=flat">
-</p>
-
-<p align="center">
-  <i>"Datos que no se usan son solo números. Datos que se usan son decisiones."</i>
-</p>
-
----
-
-<p align="center">
-  🇨🇷 Hecho en Costa Rica · Actualmente buscando nuevas oportunidades 🔍
 </p>
